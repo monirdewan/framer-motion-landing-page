@@ -17,7 +17,9 @@ export const useGetServices = ()=>{
 
     }))
     return services
-        }
+        },
+    //gcTime:5000, // Cache time Controll in tanstack Query
+    staleTime:10000,  //donat cache for some second in infinity
     });
     return servicesData
 }
